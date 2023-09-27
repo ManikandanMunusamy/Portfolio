@@ -34,7 +34,7 @@ const Hero = () => {
           justify-center items-center 
           bottom-32 xs:bottom-10"
       >
-        <a href="#about">
+        <a href="#work">
           <div
             className="w-[35px] h-[64px] rounded-3xl
             border-4 border-secondary flex

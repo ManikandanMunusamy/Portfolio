@@ -1,4 +1,5 @@
 import React from 'react'
+import { SectionWrapper } from '../hoc'
 
 const Works = () => {
   return (
@@ -6,4 +7,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default SectionWrapper(Works, 'work');

@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../utils/motion";
 import { styles } from "../styles";
 import { services } from "../contants";
-
-const SeriveCard = ({ title, icon }) => {
+import { SectionWrapper } from "../hoc";
+const SeriveCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn("right", "spring, 0.5 * index")}
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
@@ -57,4 +57,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, 'about');
